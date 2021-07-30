@@ -1,0 +1,24 @@
+{% extends 'Home/base.html' %}
+{% block title %}Blog{% endblock title %}
+
+{% block header %}
+{% if post %}
+{% for post in post %}
+<div class="bg-light p-5 mt-4 mx-5 rounded">
+    <h1>{{post.title}}</h1>
+    <p class="lead">{{post.content|safe | truncatewords:40}}</p>
+    <a class="btn btn-lg btn-primary" href="/detail/{{post.id}}" role="button">Read More »</a>
+</div>
+<br>
+{% endfor %}
+{% endif %}
+
+
+
+
+
+
+
+
+
+{% endblock header %}

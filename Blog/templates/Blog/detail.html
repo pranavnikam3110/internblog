@@ -1,0 +1,14 @@
+{% extends 'Home/base.html' %}
+{% block title %}Blog Detail{% endblock title %}
+
+{% block header %}
+
+<div class="bg-light p-5 mt-4 mx-5 rounded">
+    <h1>{{detail.title}}</h1>
+    <p class="lead">{{detail.content|safe}}</p>
+    {% comment %} <a class="btn btn-lg btn-primary" href="#" role="button">Read More »</a> {% endcomment %}
+</div>
+
+
+
+{% endblock header %}

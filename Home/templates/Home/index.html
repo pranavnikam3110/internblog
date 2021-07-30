@@ -1,0 +1,18 @@
+{% extends 'Home/base.html' %}
+{% load static %}
+{% block title %}Home{% endblock title %}
+{% block homeactive %} active {% endblock homeactive %}
+
+{% block header %}
+
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'Home/images/home.jpg' %}" class="d-block w-100" alt="...">
+    </div>
+  </div>
+</div>
+
+
+
+{% endblock header %}
